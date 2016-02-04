@@ -5,6 +5,27 @@
 	margin: 0;
 	padding: 0;
 }
+/*======Vertical Centering==========*/
+
+.Aligner {
+ /* display: flex;*/
+  align-items: center;
+  justify-content: center;
+}
+
+/*.Aligner-item {
+  max-width: 50%;
+}*/
+
+.Aligner-item--top {
+  align-self: flex-start;
+}
+
+
+/*======Vertical Centering Ends==========*/
+
+
+
 .img,object{
 	max-width:100%;
 	}
@@ -111,9 +132,9 @@ body, .header, .navigation, .footer {
 .header, .navigation, .footer {
   clear: both;
 }
-.column {
+/*.column {
     margin: 10px 1.0416% 0 0;
-}
+}*/
 .navigation {
   min-height: 25px;
   overflow:hidden;
@@ -133,7 +154,7 @@ body, .header, .navigation, .footer {
   border: 1px dotted #990000;
   padding:35px;
   background: #D1AB6E;;
-  background-clip: content-box;
+  background-clip: padding-box;
 
 }
 #points {
@@ -142,12 +163,63 @@ body, .header, .navigation, .footer {
   border: 1px dotted #990000;
   padding:35px;
   background: #D1AB6E;;
-  background-clip: content-box;
+  background-clip: padding-box;
 }
 #main {
   margin: 10px 27.0833% 0 26.041%x;
   width: 66%;
 }
+/*#content > article
+{
+-moz-column-gap: 2rem;
+-webkit-column-gap: 2rem
+column-width:100px;
+-moz-column-width:15rem;
+-webkit-column-width:15rem;
+}*/
+
+/*======Ensure Images Are Retina-ready======*/
+
+figure{
+	width: auto;
+	}
+img{
+	max-width: 100%;
+	}
+figure span{
+	display:inline-block;
+	position:relative;
+	}
+	
+figure figcaption{
+	position:absolute;
+	right: 22px;
+    bottom: 0;
+    left: 31px;
+	background: rgba(0, 0, 0, 0.56);
+	color: #fff;
+	padding:10px;
+}
+
+
+@media (-webkit-min-device-pixel-ratio:2);
+            (min-resolution: 192dpi;) {
+	 dt{
+		border-bottom: .5px dashed #7b96bc;
+		}
+	.navigation {
+		border-bottom: 1px solid #594846; 
+	 }
+}
+
+/*#field-image:before {
+	content: url(img/collage.png);
+	content:-webkit-image-set(url(img/collage.png) 1x, url(img/img/collage 2x.png) 2x);
+	}
+	#field-image{
+		width:310px;
+		
+		}*/
 /* Mobile Device*/
 @media (max-width : 488px){
 body{
@@ -174,12 +246,14 @@ h1{
 	float:none;
 	}
 a{
- font-size: 17px;
+ /*font-size: 17px;*/
+ font-size: 1.059rem;
 	}
 .navigation ul li {
 	
 	float: none;
-    font-size: 27px;
+    /*font-size: 27px;*/
+	font-size: 1.92857143rem;
 	width:100%
 }
 img{
@@ -187,6 +261,7 @@ img{
 	}
 
 }
+
 /*Tablet Screen*/
 @media (min-width: 489px) and (max-width: 800px) {
 	body{
@@ -213,18 +288,21 @@ h1{
 	}
 dl{
 	
-	font-size:36px;
+	/*font-size:36px;*/
+	font-size:1.481rem;
 	}
 #points{
 	float:none;
 	}
 #points, ul{
 	
-	font-size:129%;
+	/*font-size:18px;*/
+	font-size:1.481rem;
 	background-clip: padding-box;
 	}
 a{
- font-size: 28px;
+ /*font-size: 28px;*/
+ font-size: 1.481rem;
 	}
 
 
@@ -255,6 +333,10 @@ img{
     font-weight: bold;
 }
 p{
-	font-size: 30px;
+	/*font-size: 30px;*/
+	font-size: 1.481rem;
 	}
+	dl {
+    margin: 0 1.5em;
+}
 	}

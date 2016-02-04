@@ -2,10 +2,19 @@
 <html> 
 <head> 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1" />--><!--zoom level-->
+  <meta name="viewport" content="width=device-width"><!--layout at device width-->
+  <!--<meta name="viewport" content="width=device-1040" />-->
       <title>Carrals Cafe</title> 
+  <!--[if lte IE 8]><script scr=js/html5shiv.js"></script><![endif]-->
+  <!--link stylesheets-->
   <link rel="stylesheet" type="text/css" href="styles.css" /> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="only screen and (min-width:640px) and (max-widthL 960px)" href="css/screen_layout_medium.css"/>
+<link rel="stylesheet" type="text/css" media="only screen and (min-width:961px) and (max-widthL 1200px)" href="css/screen_layout_large.css"/>
+
 </head> 
+
 <body> 
 <div class="navigation">
 <ul>
@@ -45,6 +54,8 @@
 <iframe width="230" height="173" src="http://www.youtube.com/embed/EdPo0fcPsfc" frameborder="0" allowfullscreen></iframe> 
       </p> 
 </div> 
+<div class="Aligner">
+<div class="Aligner-item Aligner-item--top">
 <div id="points" class="column"> 
   <p class="intro">Carrsals Cafe <em>the</em> spot to hit at Miami International University for:</p> 
     <ul> 
@@ -56,13 +67,26 @@
     </ul> 
  
 </div> 
+</div> <!--- Aligner-item Aligner-item--top --->
+</div> <!--- Aligner Center ends-->
+
+<div class="Aligner">
+<div class="Aligner-item Aligner-item--top">
 <div id="main" class="column"> 
   <h2>This month's special</h2> 
   
   <p class="intro">Freshly baked pastelitos de Guava and Cheese!.</p> 
   <p>Between classes or just before an exam, there is nothing like a fresh-baked pastelito de Guava and Cheese to satisfy a little hunger pang. Pair it with a delicious <em>Cafe con Leche</em> to create the perfect afternoon snack.</p> 
-  <img src="../img/collage.png" alt="Tastes wonderful" width="310" /> 
+  <figure>
+  <div id="field-image"></div>
+ <span><img src="img/collage-.png" alt="Tastes wonderful" width="310" srcset="img/collage 2x.png 2x"/> 
+       
+  <figcaption> Our Menu</figcaption></span>
+  </figure>
 </div> 
+
+</div><!--Aligner-item Aligner-item--top-->
+</div><!--Aligner End-->
 <div class="footer"> 
   <p>See you soon at Carral's Cafe!</p> 
   <footer>Copyright © Katie</footer>
