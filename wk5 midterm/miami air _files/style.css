@@ -204,7 +204,7 @@ h4 {
     width: 65px;
     height: 36px;
     text-indent: -9999px;
-    background: url('../img/nav-bar.png') no-repeat left top;
+    background: url('http://www.miamiair.com/img/nav-bar.png') no-repeat left top;
     outline: none;
 }
 
@@ -2007,3 +2007,104 @@ span.note{
 /* ==========================================================================
    End Footer
    ========================================================================== */
+
+/* ==========================================================================
+                           DIFFERENT SCREEN MODE
+   ========================================================================== */
+
+
+/*===============================
+          Mobile Device
+ ===============================*/
+
+@media (max-width : 488px){
+	
+	/*=========Menu======*/
+	
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+
+
+/*Style for dropdown links*/
+li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+	background: #19c589;
+	color: #fff;
+}
+/*Hide dropdown links until they are needed*/
+li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+/*+++++++++++++++++
+       slider
++++++++++++++++++++*/
+
+#wrapper {
+  padding: 0 32px 32px;
+  background-color: #fff;
+    
+}
+#wrapper {
+    width: 101%;
+    margin: 48px auto 14px;
+    padding: 0 32px 32px;
+    background-color: #fff;
+    font-size: 6%;
+}
+/*+++++++++++++++++
+       logo
++++++++++++++++++++*/
+
+#logo img {
+    margin: 71px 30px;
+}
+
+P.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+
+#sidebar {
+    width: 599px;
+    float: none;
+}
+	}
+	
+	@media (max-width : 488px){
+		
+		
+		
+		
+	}
